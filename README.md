@@ -21,14 +21,14 @@ Method: GET
 Request Body: None  
 Request Parameters: None  
 Path Variable: isbn  
-Return: ValidatedIsbn (Object)
+Return: ValidatedIsbn (Object)   
 Description: Validates an ISBN-13 and returns validation details
 
 ### Validate All ISBNs
 URL: /validate/all
 Method: POST  
-Request Body: IsbnDto (isbn[String])
-Request Parameters: None
-Path Variable: None
-Return: IsbnValidatorAllResponse (Object)
+Request Body: IsbnDto (isbn[String])    
+Request Parameters: None    
+Path Variable: None    
+Return: IsbnValidatorAllResponse (Object)    
 Description: Validates all ISBN types and returns validation response
