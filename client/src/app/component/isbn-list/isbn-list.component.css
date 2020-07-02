@@ -1,0 +1,32 @@
+.main-isbn-list {
+    background-color: white;
+    width: 400px;
+    border-color: black;
+    border-width: medium;
+    border-radius: 25px;
+    box-shadow: 0 0 1em darkblue;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+}
+
+.title {
+    padding: 1em;
+    font-size: x-large;
+    font-weight: bold;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #aa8f66;
+    text-align: center;
+}
+
+.item-list-container {
+    padding: 1em;
+}
+
+button {
+    margin: 0.5em .5em;
+}

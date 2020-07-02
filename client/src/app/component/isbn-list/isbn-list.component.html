@@ -1,0 +1,11 @@
+<div class="main-isbn-list">
+    <div class="title">ISBN Validator</div>
+    <div class="item-list-container"> 
+        <div *ngFor="let isbn of isbnList">
+            <app-isbn-list-item [isbn]="isbn"></app-isbn-list-item>
+        </div>
+        <button class="btn btn-primary" (click)="addIsbn()">Add</button>
+        <button class="btn btn-danger" (click)="clearList()">Clear</button>
+        <button class="btn btn-primary" (click)="validate()">Validate</button>
+    </div>
+</div>

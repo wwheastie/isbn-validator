@@ -1,0 +1,46 @@
+div {
+    margin: 0.5em;
+}
+
+input {
+    width: 11.5em;
+}
+
+span {
+    float: left;
+    margin: 0.5em;
+    font-size: medium;
+    height: 1.75em;
+    width: 8em;
+}
+
+.notvalidated {
+    background-color: gray;
+}
+
+.valid {
+    background-color: green;
+}
+
+.invalid {
+    background-color: red;
+}
+
+.error {
+    border-color: red;
+}
+
+.error:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgb(255,0,0,0.5);
+}
+
+.invalid-input {
+    font-size: 10pt;
+    color: red;
+    text-align: left;
+}
+
+/* .form-control:focus {
+    border-color: #ff80ff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 100, 255, 0.5);
+} */

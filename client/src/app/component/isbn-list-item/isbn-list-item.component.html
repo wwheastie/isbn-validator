@@ -1,0 +1,21 @@
+<div>
+    <!-- Set current status of ISBN -->
+    <ng-template [ngIf]="isbn.valid === null">
+        <span class="notvalidated badge badge-secondary">Not Validated</span>
+    </ng-template>
+
+    <ng-template [ngIf]="isbn.valid === true">
+        <span class="valid badge badge-secondary">Valid</span>
+    </ng-template>
+
+    <ng-template [ngIf]="isbn.valid === false">
+        <span class="invalid badge badge-secondary">Invalid</span>
+    </ng-template>
+
+    <!-- ISBN input text box -->
+    <input class="form-control" [ngClass]="{'error':isbn.invalidReason}"
+    type="text" (keypress)="keyPress($event)" 
+    (keydown)="keyUp()" (change)="onChange()"
+    (paste)="onPaste($event)" [(ngModel)] = "isbn.bookNumber">
+    <p class="invalid-input" *ngIf="isbn.invalidReason !== null || isbn.invalidReason !== ''">{{isbn.invalidReason}}</p>
+</div>
